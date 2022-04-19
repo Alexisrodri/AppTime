@@ -1,2 +1,2 @@
 # Apptime
-App del tiempo utilizando API de weather
+App del tiempo utilizando las APIS de Weather-time y Unsplash.
