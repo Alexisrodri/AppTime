@@ -81,9 +81,6 @@ body{
     text-align: center;
 }
 
-span{
-    color:rgb(136, 116, 0);
-}
 
 @media (max-width:400px){
     .caja{
