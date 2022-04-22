@@ -19,9 +19,9 @@ let weather = {
         const ciudad = document.querySelector(".ciudad").innerText = "El clima en " + name;
         const icono = document.querySelector(".icono").src = "https://openweathermap.org/img/wn/"+ icon +".png"
         const temperatura = document.querySelector(".temperatura").innerText = description;
-        const descripcion = document.querySelector(".grados").innerText = "Su temperatura es de :" + " " + <span>Math.round((temp)*9/5 +32)</span> + "℃";
-        const humedad = document.querySelector(".humedad").innerText = "Con una humedad del: "+ " " + <span> humidity + "%"</span>;
-        const viento = document.querySelector(".velocidad").innerText = "Con vientos de: " + <span>speed + "Km/h"</span>;
+        const descripcion = document.querySelector(".grados").innerText = "Su temperatura es de :" + " " + Math.round((temp)*9/5 +32) + "℃";
+        const humedad = document.querySelector(".humedad").innerText = "Con una humedad del: "+ " " + humidity + "%";
+        const viento = document.querySelector(".velocidad").innerText = "Con vientos de: " + speed + "Km/h";
         document.body.style.backgroundImage = "url('https://source.unsplash.com/1200x720/?"+ name +"')"
     },
     search: function() {
