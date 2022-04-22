@@ -3,6 +3,9 @@
 *{
     font-family: 'Roboto Slab', serif;   
     font-weight:600;
+    padding:0;
+    margin:0;
+    box-sizing: content-box;
 }
 
 
@@ -19,10 +22,8 @@ body{
 
 .caja
 {
-    position: absolute;
-    top: 50px;
     width:calc(100% - 70%);
-    height:calc(100% - 25%);
+    height:400px;
     border-radius:20px;
     background:rgba(4, 4, 4, 0.768);
 }
@@ -30,10 +31,10 @@ body{
 .caja-app
 {
     display:flex;
-    flex-direction:column;
-    padding:40px 0 0 0;
+    flex-direction:row;
     align-items:center;
-    justify-content: center;
+    justify-content:center;
+    height:80px;
 }
 
 .search
@@ -42,17 +43,14 @@ body{
     border-radius:20px;
     outline:none;
     padding:10px;
-    width:200px;
+    width:250px;
     background:rgba(0, 0, 0, 0.734);
     color:#fff;
 }
 
 .button
 {
-    position:relative;
     width: 30px;
-    left:130px;
-    bottom:39px;
     padding:10px 5px;
     border:none;
     border-radius:20px;
@@ -61,23 +59,30 @@ body{
 
 .icono
 {
-    width:100px;
+    width:50px;
 }
 
 .weather
 {
     display:flex;
     flex-direction:column;
-    text-align: center;
+    justify-content:center;
     align-items:center;
 }
 
 .datos
 {
-    position:absolute;
-    top:300px;
-    left:40px;
-    font-size:22px;
+    padding: 20px;
+    font-size:12px;
+    line-height: 40px;
+}
+
+.temperatura{
+    text-align: center;
+}
+
+span{
+    color:rgb(136, 116, 0);
 }
 
 @media (max-width:400px){
