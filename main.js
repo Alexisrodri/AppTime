@@ -1,14 +1,14 @@
 let weather = {
     "apiKey": "3c006f265c3d9ef27f3fbb4d0e6db6a6",
-    fetchWeather : function async(city){
-         await fetch(
+    fetchWeather : function (city){
+          fetch(
             "https://api.openweathermap.org/data/2.5/weather?q="
             + city + 
             "&appid="
             + this.apiKey 
             )
-            .then((response) => await response.json())
-            .then((data) =>  await this.displayWeather(data))
+            .then((response) => response.json())
+            .then((data) =>  this.displayWeather(data))
     },
     displayWeather: function(data){
         const {name} = data;
